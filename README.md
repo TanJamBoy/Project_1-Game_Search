@@ -1,4 +1,4 @@
-# Project-1-Game-Searcher
+# Project_1-Game_Search
 
 ## Application Requirements
 
