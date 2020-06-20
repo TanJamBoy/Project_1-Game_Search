@@ -1,4 +1,4 @@
-# Project 1
+# Project-1-Game-Searcher
 
 ## Application Requirements
 
@@ -12,13 +12,17 @@
 * Must be deployed to GitHub Pages
 
 ## User Story 
-As a Video Game Enthusiast
-I want to search for related video game details and GIFS
-So That i can learn more about video games
-Given I am searching for a Video Game name
-When I search a video game 
-Then I get related video game details and GIFS
+As a videogame enthusiast
+I want to search for any videogame and see related videogame details and GIFS
+So that i can learn more about videogames
+Given I am searching for a videogame name
+When I search a videogame 
+Then I get related videogame details and GIFS
 
+## Collaborators
+Thierry Nzeukou 
+Tanner Boyer
+Yesenia Ibarra
 
 
 ## Presentation Requirements
@@ -41,11 +45,3 @@ Use this [project presentation template](https://docs.google.com/presentation/d/
 | Functionality | 30%    |
 | Collaboration | 30%    |
 | Presentation  | 10%    |
-
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application
-* The URL of the GitHub repository
