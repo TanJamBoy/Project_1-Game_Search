@@ -20,9 +20,9 @@ When I search a videogame
 Then I get related videogame details and GIFS
 
 ## Collaborators
-Thierry Nzeukou 
-Tanner Boyer
-Yesenia Ibarra
+* Thierry Nzeukou 
+* Tanner Boyer
+* Yesenia Ibarra - https://github.com/YessyIbarra 
 
 
 ## Presentation Requirements
