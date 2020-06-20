@@ -20,9 +20,12 @@ So that i can learn more about videogames
 ```
 
 ## Criteria
+
+```
 Given I am searching for a videogame name
 When I search a videogame 
 Then I get related videogame details and GIFS
+```
 
 ## Collaborators
 * Thierry Nzeukou 
