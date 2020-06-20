@@ -12,9 +12,14 @@
 * Must be deployed to GitHub Pages
 
 ## User Story 
+
+```
 As a videogame enthusiast
 I want to search for any videogame and see related videogame details and GIFS
 So that i can learn more about videogames
+```
+
+## Criteria
 Given I am searching for a videogame name
 When I search a videogame 
 Then I get related videogame details and GIFS
