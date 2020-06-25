@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
+/*This is for the header's border and text */
 html, body {
   height: 100%;
 }
@@ -55,6 +56,40 @@ body {
     }
 }
 
+/*This is for the second border*/
+#box2 {
+  /*display: flex;
+  align-items: center;
+  justify-content: center;  Took these out for now*/
+  width: 80%;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 1.5rem;
+  display: none;
+}
+
+.gradient-border2 {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+  margin-top: 20px;
+}
+.gradient-border2:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+/*This is for the button and button effect */
 form{
     position: relative;
     top: 50%;
@@ -113,5 +148,15 @@ form:hover input{
 form:hover .fa{
     background: #07051a;
     color: white;
+}
+
+
+/*Button styling goes here*/
+.center-button {
+text-align: center;
+}
+
+.pure-button {
+  margin-top: 200px;
 }
 
