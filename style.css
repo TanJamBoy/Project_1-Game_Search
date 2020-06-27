@@ -16,7 +16,7 @@ font-weight: 100;
 /*applying new font style here*/
 #head{
   font-family: 'pdark';
-  font-size: 70px;
+  font-size: 100px;
 }
 
 body {
@@ -32,15 +32,17 @@ body {
 }
 
 
-@media only screen and (max-width: 768px){
-  #head{
-    font-size: 45px;
-  }
+@media only screen and (max-width: 1024px){
   body{
     /* Need to make the file size of this background image smaller
     to improve page load speed*/
     background-image: url("assets/games.jpg");
   }
+
+  #head{
+    font-size: 45px;
+  }
+
 }
 #box {
   display: flex;
@@ -88,6 +90,15 @@ body {
 
 /*This is for the second border where video game info goes*/
 #gameInfo {
+  width: 80%;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 1.5rem;
+  display: none;
+}
+
+/*This is for the third border where video game Gifs go*/
+#gameGifs {
   width: 80%;
   color: white;
   font-family: 'Raleway';
@@ -160,28 +171,34 @@ input{
     text-align: center;
     font-size: 1.2em;
     transition: all 1s;
-    
 }
 
-@media only screen and (max-width: 768px){
+form:hover .fa{
+    background: #07051a;
+    color: white;
+}
+
+@media only screen and (max-width: 1024px){
+
   form{
     background: black;
     border: 4px solid black;
   }
-  input{
+
+  input {
     background: black;
   }
+
   .fa {
-    color: white;
+    color: white
   }
+
   form:hover .fa{
-    background: #07051a;
-    color: white;
+    background: white;
+    color: black;
+  }
+
 }
-}
-
-
-
 
 
 /*Button styling goes here*/
@@ -202,6 +219,9 @@ color: #FFFFFF;
 text-align: center;
 transition: all 0.15s;
 background-color:  #090909;
+display: none;
+margin-left: auto;
+margin-right: auto;
 }
 
 .button:hover { /*hover state*/
@@ -213,7 +233,7 @@ border-color: #dddddd;
   color: #bbbbbb;
   border-color: #bbbbbb;
 }
-@media all and (max-width:30em) { /*Targeting all screen sizes of devices*/
+@media all and (max-width:30em) {
 .button{
   display:block;
   margin:0.4em auto;

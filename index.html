@@ -27,26 +27,31 @@
         <header id="head">GAME SEARCH</header>
     </div>
     <div class="pure-u-1-1">
-        <form>
+        <form action="">
             <input id="searchInput" type="search">
             <i id="searchBtn" class="fa fa-search"></i>
         </form>
     </div>
     <div class="gradient-border2 pure-u-1-1" id="gameInfo">
         <!--Video Game Info Goes Here-->
-        <h1 class="game-title"></h1>
+        <h1 id="game-title"></h1>
         <p id="game-description"></p>
-        <ul id="game-developers"></ul>
-        <ul id="game-developers"></ul>
-        <p id="genres"></p>
-        <ul id="platforms"></ul>
+        <p id="game-meta"></p>
         <p id="release-date"></p>
+        <a href="" id="game-website"></a>
+        <ul id="game-developers"></ul>
+        <ul id="genres"></ul>
+        <ul id="platforms"></ul>
         <ul id="tags"></ul>
     </div>
 
+    <div class="gradient-border2 pure-u-1-1" id="gameGifs">
+
+    </div>
+
     <!--More GIFs button goes Here-->
-    <div class="pure-u-1-1 center-button ">
-        <button class="button">More Gifs</button>
+    <div class="pure-u-1-1">
+        <button id="moreGifsBtn" class="button">More Gifs</button>
     </div>
 </body>
 <script src="script.js"></script>
