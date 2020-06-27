@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Searcher</title>
-    <link type="text/stylesheet" href="style.css">
-    <script
-        src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-        crossorigin="anonymous">
-    </script>
+    <title>Game Search</title>
+    <!--Favicon link-->
+    <link rel="icon" href="assets/redhat_games.ico" sizes="any" type="image">
+    <!--CSS styling sheet link-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--jQuery link-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!--pureCSS link-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Game Search</title>
 </head>
-<body>
-    
+
+<body class="pure-g bg">
+    <div class="gradient-border pure-u-1-1" id="box">
+        <header id="head">GAME SEARCH</header>
+    </div>
+    <div class="pure-u-1-1">
+        <form>
+            <input id="searchInput" type="search">
+            <i id="searchBtn" class="fa fa-search"></i>
+        </form>
+    </div>
+    <div class="gradient-border2 pure-u-1-1" id="gameInfo">
+        <!--Video Game Info Goes Here-->
+        <h1 class="game-title"></h1>
+        <p id="game-description"></p>
+        <ul id="game-developers"></ul>
+        <ul id="game-developers"></ul>
+        <p id="genres"></p>
+        <ul id="platforms"></ul>
+        <p id="release-date"></p>
+        <ul id="tags"></ul>
+    </div>
+
+    <!--More GIFs button goes Here-->
+    <div class="pure-u-1-1 center-button ">
+        <button class="button">More Gifs</button>
+    </div>
 </body>
 <script src="script.js"></script>
+
 </html>
