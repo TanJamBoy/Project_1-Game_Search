@@ -9,10 +9,23 @@ $("#moreGifsBtn").click(moreGifs);
 //Click event for search button
 $("#searchBtn").click(gameSearch);
 
+$(document).on('keypress',function(e) {
+    if(e.which == 13) {
+        gameSearch();
+    };
+});
+
 //Function that calls the apis using the search input value after clicking the search button
 function gameSearch(){
+
+    if (event){
+        event.preventDefault();
+    }else{
+
+    };
     
-    $("#gameInfo").empty();
+    
+    //$("#gameInfo").empty();
     $("#gameGifs").empty();
     $("#moreGifsBtn").css("display", "none");
 
@@ -71,15 +84,15 @@ function addInfo(response){
     var tags = response.tags;
     var website = response.website;
 
-    var newTitle = $("<h1>");
-    var newDesc = $("<p>");
-    var newDevs = $("<ul>");
-    var newGenres = $("<ul>");
-    var newMeta = $("<p>");
-    var newPlats = $("<ul>");
-    var newReleased = $("<p>");
-    var newTags = $("<ul>");
-    var newWebsite = $("<a>");
+    var newTitle = $("#game-title");
+    var newDesc = $("#game-description");
+    var newDevs = $("#game-developers");
+    var newGenres = $("#genres");
+    var newMeta = $("#game-meta");
+    var newPlats = $("#platforms");
+    var newReleased = $("#release-date");
+    var newTags = $("#tags");
+    var newWebsite = $("#game-website");
 
     newTitle.text("Title: " + title);
     newDesc.text("Description: " + desc);
@@ -112,8 +125,7 @@ function addInfo(response){
         newTags.append(newTag);
     };
 
-
-    $("#gameInfo").append(newTitle, newDesc, newDevs, newGenres, newMeta, newPlats, newReleased, newTags, newWebsite);
+    $("#gameInfo").css("display" , "block");
 
 };
 
@@ -130,6 +142,7 @@ function addGifs() {
     };
 
     $("#gameGifs").prepend(newGif);
+    $("#gameGifs").css("display" , "block");
     $("#moreGifsBtn").css("display", "block");
 
 };
