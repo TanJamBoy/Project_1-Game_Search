@@ -5,6 +5,19 @@ html, body {
   height: 100%;
 }
 
+/*adding font style here*/
+@font-face {
+font-family: 'pdark';
+src: url(assets/pdark.ttf);
+font-style: normal;
+font-weight: 100;
+}
+
+/*applying new font style here*/
+#head{
+  font-family: 'pdark';
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -13,7 +26,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background: #090909;
-  background-image: url("games2.jpg");
+  background-image: url("assets/games2.jpg");
+}
+
+
+@media only screen and (max-width: 767px){
+  body{
+    /* Need to make the file size of this background image smaller
+    to improve page load speed*/
+    background-image: url("assets/games.jpg");
+  }
 }
 #box {
   display: flex;
@@ -59,7 +81,7 @@ body {
     }
 }
 
-/*This is for the second border*/
+/*This is for the second border where video game info goes*/
 #box2 {
   /*display: flex;
   align-items: center;
@@ -166,7 +188,7 @@ border: 0.16em solid #FFFFFF;
 box-sizing: border-box; /* includes padding and border in an element's total width and height*/
 text-decoration: none; /* used to remove underlines off links*/
 text-transform: uppercase; /*upper case letters*/
-font-family: sans-serif;
+font-family: serif;
 font-weight: 400;
 color: #FFFFFF;
 text-align: center;
@@ -179,7 +201,7 @@ color: #dddddd;
 border-color: #dddddd;
 }
 
-.button:active{
+.button:active{ /*Active state*/
   color: #bbbbbb;
   border-color: #bbbbbb;
 }
