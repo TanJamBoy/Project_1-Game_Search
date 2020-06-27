@@ -5,20 +5,15 @@ html, body {
   height: 100%;
 }
 
-/* .bg{
-  
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: #1D1F20;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRClg_qWgE5AQsubF5gUbOwyP4Wc_LpYsOrGrjeRJFwaXvR0pHj&usqp=CAU");
+  background-position: center;
+  background-repeat: no-repeat;
+  background: #090909;
+  background-image: url("games2.jpg");
 }
 #box {
   display: flex;
@@ -33,7 +28,7 @@ body {
 
 .gradient-border {
   --borderWidth: 3px;
-  background: #1D1F20;
+  background: #090909;
   position: relative;
   border-radius: var(--borderWidth);
   margin-top: 20px;
@@ -78,7 +73,7 @@ body {
 
 .gradient-border2 {
   --borderWidth: 3px;
-  background: #1D1F20;
+  background: #121212;;
   position: relative;
   border-radius: var(--borderWidth);
   margin-top: 20px;
@@ -97,7 +92,7 @@ body {
   background-size: 300% 300%;
 }
 
-/*This is for the button and button effect */
+/*This is for the search button and button effect */
 form{
     position: relative;
     top: 50%;
@@ -162,9 +157,35 @@ form:hover .fa{
 /*Button styling goes here*/
 .center-button {
 text-align: center;
+
+}
+.button { /* initial state*/
+margin-top: 300px;
+padding:0.5em 3em;
+border: 0.16em solid #FFFFFF;
+box-sizing: border-box; /* includes padding and border in an element's total width and height*/
+text-decoration: none; /* used to remove underlines off links*/
+text-transform: uppercase; /*upper case letters*/
+font-family: sans-serif;
+font-weight: 400;
+color: #FFFFFF;
+text-align: center;
+transition: all 0.15s;
+background-color:  #090909;
 }
 
-.pure-button {
-  margin-top: 200px;
+.button:hover { /*hover state*/
+color: #dddddd;
+border-color: #dddddd;
 }
 
+.button:active{
+  color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+@media all and (max-width:30em) {
+.button{
+  display:block;
+  margin:0.4em auto;
+  }
+  }
