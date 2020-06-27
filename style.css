@@ -219,6 +219,9 @@ color: #FFFFFF;
 text-align: center;
 transition: all 0.15s;
 background-color:  #090909;
+display: none;
+margin-left: auto;
+margin-right: auto;
 }
 
 .button:hover { /*hover state*/
