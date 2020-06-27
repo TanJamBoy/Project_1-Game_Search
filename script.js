@@ -113,8 +113,8 @@ function addInfo(response){
     };
 
 
-    $("#box2").append(newTitle, newDesc, newDevs, newGenres, newMeta, newPlats, newReleased, newTags, newWebsite);
-    $("#box2").css("display" , "block");
+    $("#gameInfo").append(newTitle, newDesc, newDevs, newGenres, newMeta, newPlats, newReleased, newTags, newWebsite);
+    $("#gameInfo").css("display" , "block");
 };
 
 //Function to add gifs to the page

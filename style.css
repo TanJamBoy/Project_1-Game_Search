@@ -16,6 +16,7 @@ font-weight: 100;
 /*applying new font style here*/
 #head{
   font-family: 'pdark';
+  font-size: 70px;
 }
 
 body {
@@ -24,13 +25,17 @@ body {
   align-items: center;
   height: 100%;
   background-position: center;
-  background-repeat: no-repeat;
   background: #090909;
   background-image: url("assets/games2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
+  #head{
+    font-size: 45px;
+  }
   body{
     /* Need to make the file size of this background image smaller
     to improve page load speed*/
@@ -82,10 +87,7 @@ body {
 }
 
 /*This is for the second border where video game info goes*/
-#box2 {
-  /*display: flex;
-  align-items: center;
-  justify-content: center;  Took these out for now*/
+#gameInfo {
   width: 80%;
   color: white;
   font-family: 'Raleway';
@@ -121,7 +123,7 @@ form{
     left: 50%;
     transform: translate(-50%,-50%);
     transition: all 1s;
-    width: 50px;
+    width: 200px;
     height: 50px;
     background: white;
     box-sizing: border-box;
@@ -140,7 +142,6 @@ input{
     line-height: 30px;
     outline: 0;
     border: 0;
-    display: none;
     font-size: 1em;
     border-radius: 20px;
     padding: 0 20px;
@@ -159,21 +160,28 @@ input{
     text-align: center;
     font-size: 1.2em;
     transition: all 1s;
+    
 }
 
-form:hover{
-    width: 200px;
-    cursor: pointer;
-}
-
-form:hover input{
-    display: block;
-}
-
-form:hover .fa{
+@media only screen and (max-width: 768px){
+  form{
+    background: black;
+    border: 4px solid black;
+  }
+  input{
+    background: black;
+  }
+  .fa {
+    color: white;
+  }
+  form:hover .fa{
     background: #07051a;
     color: white;
 }
+}
+
+
+
 
 
 /*Button styling goes here*/
@@ -205,7 +213,7 @@ border-color: #dddddd;
   color: #bbbbbb;
   border-color: #bbbbbb;
 }
-@media all and (max-width:30em) {
+@media all and (max-width:30em) { /*Targeting all screen sizes of devices*/
 .button{
   display:block;
   margin:0.4em auto;
