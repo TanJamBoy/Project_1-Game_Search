@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Search</title>
+
     <!--Favicon link-->
     <link rel="icon" href="assets/redhat_games.ico" sizes="any" type="image">
     <!--CSS styling sheet link-->
@@ -18,16 +19,21 @@
     <!--Font Awesome Link-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!--Google Font Link-->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 
     <title>Game Search</title>
 </head>
+<!--Header goes here-->
 
 <body class="pure-g bg">
     <div class="gradient-border pure-u-1-1" id="box">
-        <header id="head">GAME SEARCH</header>
+        <header id="header">GAME SEARCH</header>
     </div>
+    <!--Search bar goes here-->
     <div class="pure-u-1-1">
         <form action="">
+            <label for="searchInput">Enter Game Title</label>
             <input id="searchInput" type="search">
             <i id="searchBtn" class="fa fa-search"></i>
         </form>
@@ -38,19 +44,16 @@
         <p id="game-description"></p>
         <p id="game-meta"></p>
         <p id="release-date"></p>
-        <a href="" id="game-website"></a>
+        <p><a href="" id="game-website"></a></p>
         <ul id="game-developers"></ul>
         <ul id="genres"></ul>
         <ul id="platforms"></ul>
         <ul id="tags"></ul>
     </div>
-
     <div class="gradient-border2 pure-u-1-1" id="gameGifs">
-
     </div>
-
     <!--More GIFs button goes Here-->
-    <div class="pure-u-1-1">
+    <div class="pure-u-1-1" style="align-items: center;">
         <button id="moreGifsBtn" class="button">More Gifs</button>
     </div>
 </body>
