@@ -75,7 +75,7 @@ body {
   background: #090909;
   position: relative;
   border-radius: var(--borderWidth);
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .gradient-border:after {
   content: '';
@@ -142,20 +142,25 @@ body {
 }
 
 /*SEARCH BUTTON - FORM STYLING HERE*/
+#searchInput {
+  font-family: 'orbitron';
+  font-size: 200%;
+  margin: 0;
+}
 form{
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     transition: all 1s;
-    width: 250px; /*was 200px*/
-    height: 60px; /*was 50px*/
+    width: 300px; /* +-50px*/
+    height: 70px; /* +-10px*/
     background: white;
     box-sizing: border-box;
-    border-radius: 30px; /*was 25px*/
+    border-radius: 35px; /* +-5 */
     border: 4px solid white;
     padding: 5px;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 /*SEARCH-BOX INPUT HERE*/
@@ -164,28 +169,29 @@ input{
     top: 0;
     left: 0;
     width: 100%;;
-    height: 50px;
+    height: 57.5px; /* +-7.5 */
     line-height: 30px;
     outline: 0;
     border: 0;
     font-size: 1em;
-    border-radius: 30px;
+    border-radius: 40px; /*was +-10*/
     padding: 0 20px;
 }
+
 
 /*MAGNIFYING GLASS STYLING GOES HERE*/
 .fa{
     box-sizing: border-box;
-    padding: 15px;
-    width: 51px;
-    height: 51px;
+    padding: 20px; /* +-5 */
+    width: 59.5px; /* +-8.5 */
+    height: 59.5px; /* +-8.5 */
     position: absolute;
-    top: 1%;
+    top: 2%; /* +-1% */
     right: 0;
     border-radius: 50%;
     color: #07051a;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.4em; /* was 1.2 */
     transition: all 1s;
 }
 form:hover .fa{
@@ -198,7 +204,7 @@ form:hover .fa{
   form{
     background: black;
     border: 4px solid black;
-    color: white;
+    color:black;
   }
   input {
     background: black;
