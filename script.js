@@ -83,6 +83,9 @@ function addInfo(response){
     var released = response.released;
     var tags = response.tags;
     var website = response.website;
+    var backgroundImage = response.background_image;
+
+    $(".background").css("background-image", "url(" + backgroundImage + ")");
 
     var newTitle = $("#game-title");
     var newDesc = $("#game-description");
@@ -95,7 +98,7 @@ function addInfo(response){
     var newWebsite = $("#game-website");
 
     newTitle.text(title);
-    newDesc.text("Description : " + desc);
+    newDesc.text(desc);
     newMeta.text("Metacritic Score : " + meta);
     newReleased.text("Release Date : " + released);
     newWebsite.text(website);
@@ -105,22 +108,26 @@ function addInfo(response){
     newPlats.text("Platforms : ");
     newTags.text("Tags: ");
     for(i=0; i < devs.length; i++){
-        var newDev = $("<li>");
+        var newDev = $("<div>");
+        newDev.attr("class", "listItem");
         newDev.text(devs[i].name)
         newDevs.append(newDev);
     };
     for(i=0; i < genres.length; i++){
-        var newGenre = $("<li>");
+        var newGenre = $("<div>");
+        newGenre.attr("class", "listItem");
         newGenre.text(genres[i].name)
         newGenres.append(newGenre);
     };
     for(i=0; i < plats.length; i++){
-        var newPlat = $("<li>");
+        var newPlat = $("<div>");
+        newPlat.attr("class", "listItem");
         newPlat.text(plats[i].platform.name)
         newPlats.append(newPlat);
     };
     for(i=0; i < tags.length; i++){
-        var newTag = $("<li>");
+        var newTag = $("<div>");
+        newTag.attr("class", "listItem");
         newTag.text(tags[i].name)
         newTags.append(newTag);
     };
@@ -142,6 +149,7 @@ function addGifs() {
     };
 
     $("#gameGifs").prepend(newGif);
+    newGif.attr("class", "gifDiv");
     $("#gameGifs").css("display" , "block");
     $("#moreGifsBtn").css("display", "block");
 
@@ -160,6 +168,7 @@ function moreGifs(){
     };
 
     $("#gameGifs").append(newGif);
+    newGif.attr("class", "gifDiv");
     $("#moreGifsBtn").css("display", "none");
 
 };
