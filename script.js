@@ -87,11 +87,19 @@ function addInfo(response){
 
     $(".background").css("background-image", "url(" + backgroundImage + ")");
 
+    if(meta > 74) {
+        $(".metacriticColor").css("background-color", "#6c3")
+    }else if(meta > 49) {
+        $(".metacriticColor").css("background-color", "#fc3")
+    }else{
+        $(".metacriticColor").css("background-color", "#f00")
+    };
+
     var newTitle = $("#game-title");
     var newDesc = $("#game-description");
     var newDevs = $("#game-developers");
     var newGenres = $("#genres");
-    var newMeta = $("#game-meta");
+    var newMeta = $(".metacriticColor");
     var newPlats = $("#platforms");
     var newReleased = $("#release-date");
     var newTags = $("#tags");
@@ -99,14 +107,10 @@ function addInfo(response){
 
     newTitle.text(title);
     newDesc.text(desc);
-    newMeta.text("Metacritic Score : " + meta);
+    newMeta.text(meta);
     newReleased.text("Release Date : " + released);
     newWebsite.text(website);
     newWebsite.attr("href", website);
-    newDevs.text("Developers : ");
-    newGenres.text("Genres : ");
-    newPlats.text("Platforms : ");
-    newTags.text("Tags: ");
     for(i=0; i < devs.length; i++){
         var newDev = $("<div>");
         newDev.attr("class", "listItem");

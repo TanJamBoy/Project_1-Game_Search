@@ -43,12 +43,20 @@
         <!--Video Game Info Goes Here-->
         <h1 id="game-title"></h1>
         <p id="game-description"></p>
-        <p id="game-meta"></p>
-        <p id="release-date"></p>
-        <p><a href="" id="game-website"></a></p>
-        <p class="lists" id="game-developers"></p>
-        <ul class="lists" id="genres"></ul>
-        <ul class="lists" id="platforms"></ul>
+        <div class="splitInfo" style="height: 600px;">
+            <p id="game-meta">Metacritic Score : <span class="metacriticColor"></span></p>
+            <p id="release-date"></p>
+            <p><a href="" id="game-website"></a></p>
+        </div>
+        <div class="splitInfo">
+            <p>Developers:</p>
+            <ul class="lists" id="game-developers"></ul>
+            <p>Genres:</p>
+            <ul class="lists" id="genres"></ul>
+            <p>Platforms:</p>
+            <ul class="lists" id="platforms"></ul>
+        </div>
+        <p>Tags:</p>
         <ul class="lists" id="tags"></ul>
     </div>
     <div class="gradient-border2 pure-u-1-1" id="gameGifs">
