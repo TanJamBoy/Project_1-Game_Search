@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
-
-/*This is for the header's border and text */
-html, body {
-  height: 100%;
-}
-
-/*adding font style here*/
+/*IMPORTING FONT FOR HEADER HERE*/
 @font-face {
 font-family: 'pdark';
 src: url(assets/pdark.ttf);
@@ -13,54 +6,57 @@ font-style: normal;
 font-weight: 100;
 }
 
-/*applying new font style here*/
-#head{
+/*APPLYING IMPORTED FONT FOR HEADER HERE*/
+#header{
   font-family: 'pdark';
   font-size: 100px;
+  text-align: center;
 }
-
+/*BODY STYLING*/
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   background-position: center;
-  background: #090909;
+  background: #010101;
   background-image: url("assets/games2.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  
 }
 
 
+
+
+/*MEDIA QUERY HERE - APPLYING NEW WHITE BACKGROUND IMAGE & HEADER FONT SIZE WHEN WIDTH = 1024px*/
 @media only screen and (max-width: 1024px){
   body{
-    /* Need to make the file size of this background image smaller
-    to improve page load speed*/
     background-image: url("assets/games.jpg");
+    background-repeat: repeat-y;
   }
-
-  #head{
-    font-size: 45px;
+  #header{
+    font-size: 50px;
+    text-align: center;
   }
-
 }
+
+/*RAINBOW BORDER FOR HEADER STARTS HERE*/
 #box {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80%;
-  height: 100px;
+  height: 150px;
   color: white;
-  font-family: 'Raleway';
+  font-family: sans-serif;
   font-size: 2.5rem;
 }
-
 .gradient-border {
   --borderWidth: 3px;
   background: #090909;
   position: relative;
   border-radius: var(--borderWidth);
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .gradient-border:after {
   content: '';
@@ -75,8 +71,7 @@ body {
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
-
-@keyframes animatedgradient {
+@keyframes animatedgradient { /*this rule specifies the animation code*/
     0% {
         background-position: 0% 50%;
     }
@@ -87,12 +82,13 @@ body {
         background-position: 0% 50%;
     }
 }
+/*RAINBOW BORDER FOR HEADER ENDS HERE*/
 
 /*This is for the second border where video game info goes*/
 #gameInfo {
   width: 80%;
   color: white;
-  font-family: 'Raleway';
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.5rem;
   display: none;
 }
@@ -100,9 +96,6 @@ body {
 /*This is for the third border where video game Gifs go*/
 #gameGifs {
   width: 80%;
-  color: white;
-  font-family: 'Raleway';
-  font-size: 1.5rem;
   display: none;
 }
 
@@ -112,6 +105,7 @@ body {
   position: relative;
   border-radius: var(--borderWidth);
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .gradient-border2:after {
   content: '';
@@ -127,87 +121,93 @@ body {
   background-size: 300% 300%;
 }
 
-/*This is for the search button and button effect */
+/*SEARCH BUTTON - FORM STYLING HERE*/
+#searchInput {
+  font-family: 'orbitron';
+  font-size: 200%;
+  margin: 0;
+}
 form{
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     transition: all 1s;
-    width: 200px;
-    height: 50px;
+    width: 300px; /* +-50px*/
+    height: 70px; /* +-10px*/
     background: white;
     box-sizing: border-box;
-    border-radius: 25px;
+    border-radius: 35px; /* +-5 */
     border: 4px solid white;
     padding: 5px;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
+/*SEARCH-BOX INPUT HERE*/
 input{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;;
-    height: 42.5px;
+    height: 57.5px; /* +-7.5 */
     line-height: 30px;
     outline: 0;
     border: 0;
     font-size: 1em;
-    border-radius: 20px;
+    border-radius: 40px; /*was +-10*/
     padding: 0 20px;
 }
 
+
+/*MAGNIFYING GLASS STYLING GOES HERE*/
 .fa{
     box-sizing: border-box;
-    padding: 10px;
-    width: 42.5px;
-    height: 42.5px;
+    padding: 20px; /* +-5 */
+    width: 59.5px; /* +-8.5 */
+    height: 59.5px; /* +-8.5 */
     position: absolute;
-    top: 0;
+    top: 2%; /* +-1% */
     right: 0;
     border-radius: 50%;
     color: #07051a;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.4em; /* was 1.2 */
     transition: all 1s;
 }
-
 form:hover .fa{
     background: #07051a;
     color: white;
 }
 
+/*ADDING MEDIA QUERY TO STLYE SEARCH BOX WHEN SCREEN WIDTH = 1025px*/
 @media only screen and (max-width: 1024px){
-
   form{
     background: black;
     border: 4px solid black;
+    color:black;
   }
-
   input {
     background: black;
+    color: white;
   }
-
   .fa {
     color: white
   }
-
   form:hover .fa{
     background: white;
     color: black;
   }
-
 }
 
 
-/*Button styling goes here*/
+/*'MORE GIFS' BUTTON STYLING GOES HERE*/
 .center-button {
 text-align: center;
 
 }
 .button { /* initial state*/
 margin-top: 300px;
+margin-bottom: 50px;
 padding:0.5em 3em;
 border: 0.16em solid #FFFFFF;
 box-sizing: border-box; /* includes padding and border in an element's total width and height*/
@@ -233,9 +233,26 @@ border-color: #dddddd;
   color: #bbbbbb;
   border-color: #bbbbbb;
 }
-@media all and (max-width:30em) {
-.button{
-  display:block;
-  margin:0.4em auto;
-  }
-  }
+
+/*centering game title here*/
+#game-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#game-description , p {
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+}
+body ul {
+  list-style-type: square;
+}
+
+
+
+
+
+
+
+

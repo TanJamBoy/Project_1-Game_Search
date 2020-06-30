@@ -94,15 +94,15 @@ function addInfo(response){
     var newTags = $("#tags");
     var newWebsite = $("#game-website");
 
-    newTitle.text("Title: " + title);
-    newDesc.text("Description: " + desc);
-    newMeta.text("Metacritic Score: " + meta);
-    newReleased.text("Release Date: " + released);
+    newTitle.text(title);
+    newDesc.text("Description : " + desc);
+    newMeta.text("Metacritic Score : " + meta);
+    newReleased.text("Release Date : " + released);
     newWebsite.text(website);
     newWebsite.attr("href", website);
-    newDevs.text("Developers: ");
-    newGenres.text("Genres: ");
-    newPlats.text("Platforms: ");
+    newDevs.text("Developers : ");
+    newGenres.text("Genres : ");
+    newPlats.text("Platforms : ");
     newTags.text("Tags: ");
     for(i=0; i < devs.length; i++){
         var newDev = $("<li>");
@@ -136,7 +136,7 @@ function addGifs() {
 
     for(i=0; i < +numberOfGifs-5; i++){
         var newGifImg = $("<img>")
-        var gifUrl = gifInfo[i].images.fixed_height.url
+        var gifUrl = gifInfo[i].images.fixed_width.url
         newGifImg.attr("src", gifUrl);
         newGif.append(newGifImg);
     };
@@ -154,7 +154,7 @@ function moreGifs(){
 
     for(i=5; i < +numberOfGifs; i++){
         var newGifImg = $("<img>")
-        var gifUrl = gifInfo[i].images.fixed_height.url
+        var gifUrl = gifInfo[i].images.fixed_width.url
         newGifImg.attr("src", gifUrl);
         newGif.append(newGifImg);
     };
