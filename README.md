@@ -1,13 +1,14 @@
-# Project_1-Game_Search
+# Game_Search_Engine
 
 ## Description
 
 ```
-A mobile responsive videogame search engine created with JavaScript, CSS , HTML , PureCSS framework, and third-party APIs (RAWG & Giphy). 
-
-Check it out: [Game Search Engine](https://tanjamboy.github.io/Project_1-Game_Search/)
+A mobile responsive videogame search engine created with 
+JavaScript, CSS , HTML , PureCSS framework, and third-party APIs (RAWG & Giphy). 
 
 ```
+Check it out: 
+[Game Search Engine](https://tanjamboy.github.io/Project_1-Game_Search/)
 
 ![](gameSearch.png)
 
