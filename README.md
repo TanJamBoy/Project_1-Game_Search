@@ -7,6 +7,9 @@ A mobile responsive videogame search engine created with
 JavaScript, CSS , HTML , PureCSS framework, and third-party APIs (RAWG & Giphy). 
 
 ```
+
+## Deployed Site
+
 Check it out: 
 [Game Search Engine](https://tanjamboy.github.io/Project_1-Game_Search/)
 
