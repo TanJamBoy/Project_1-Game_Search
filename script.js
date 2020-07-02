@@ -25,7 +25,6 @@ function gameSearch(){
     };
     
     
-    //$("#gameInfo").empty();
     $("#gameGifs").empty();
     $("#moreGifsBtn").css("display", "none");
 
@@ -44,8 +43,6 @@ function gameSearch(){
         method: "GET"
     }).then(function(response){
 
-        console.log(response);
-
         if (response.redirect){
 
             RAWGGameName = response.slug;
@@ -60,7 +57,6 @@ function gameSearch(){
                 url: giphyUrl,
                 method: "GET"
             }).then(function(response){
-                console.log(response);
                 gifInfo = response.data;
                 addGifs();
             });
@@ -111,6 +107,12 @@ function addInfo(response){
     newReleased.text("Release Date : " + released);
     newWebsite.text(website);
     newWebsite.attr("href", website);
+
+    newDevs.empty();
+    newGenres.empty();
+    newPlats.empty();
+    newTags.empty();
+
     for(i=0; i < devs.length; i++){
         var newDev = $("<div>");
         newDev.attr("class", "listItem");
