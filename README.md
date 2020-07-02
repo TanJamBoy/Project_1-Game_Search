@@ -13,7 +13,7 @@ JavaScript, CSS , HTML , PureCSS framework, and third-party APIs (RAWG & Giphy).
 Check it out: 
 [Game Search Engine](https://tanjamboy.github.io/Project_1-Game_Search/)
 
-![](gameSearch.png)
+![](assets/gameSearch.png)
 
 
 ## User Story 
