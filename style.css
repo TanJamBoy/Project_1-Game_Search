@@ -12,6 +12,7 @@ font-weight: 100;
   font-size: 100px;
   text-align: center;
 }
+
 /*BODY STYLING*/
 body {
   height: 100vh;
@@ -40,10 +41,7 @@ body {
   box-shadow: inset 0px -100px 100px 0px rgba(1,1,1,1);
 }
 
-
-
-
-/*MEDIA QUERY HERE - APPLYING NEW WHITE BACKGROUND IMAGE & HEADER FONT SIZE WHEN WIDTH = 1024px*/
+/*MEDIA QUERY HERE - APPLYING WHITE BACKGROUND IMAGE & HEADER FONT SIZE WHEN WIDTH = 1024px*/
 @media only screen and (max-width: 1024px){
   body{
     background-image: url("assets/games.jpg");
@@ -53,7 +51,6 @@ body {
     font-size: 50px;
     text-align: center;
   }
-
   .background {
     display: none;
   }
@@ -67,7 +64,6 @@ body {
   width: 80%;
   height: 150px;
   color: white;
-  font-family: sans-serif;
   font-size: 2.5rem;
 }
 .gradient-border {
@@ -103,7 +99,7 @@ body {
 }
 /*RAINBOW BORDER FOR HEADER ENDS HERE*/
 
-/*This is for the second border where video game info goes*/
+/*SECOND & THIRD RAINBOW BORDER & STYLING FOR VIDEOGAME INFO & GIFs*/
 #gameInfo {
   width: 80%;
   color: white;
@@ -113,13 +109,10 @@ body {
   text-align: center;
   margin-top: 300px;
 }
-
-/*This is for the third border where video game Gifs go*/
 #gameGifs {
   width: 80%;
   display: none;
 }
-
 .gradient-border2 {
   --borderWidth: 3px;
   background: #121212;;
@@ -179,7 +172,6 @@ input{
     padding: 0 20px;
 }
 
-
 /*MAGNIFYING GLASS STYLING GOES HERE*/
 .fa{
     box-sizing: border-box;
@@ -220,11 +212,9 @@ form:hover .fa{
   }
 }
 
-
 /*'MORE GIFS' BUTTON STYLING GOES HERE*/
 .center-button {
 text-align: center;
-
 }
 .button { /* initial state*/
 margin-top: 100px;
@@ -244,27 +234,25 @@ display: none;
 margin-left: auto;
 margin-right: auto;
 }
-
 .button:hover { /*hover state*/
 color: #dddddd;
 border-color: #dddddd;
 }
-
 .button:active{ /*Active state*/
   color: #bbbbbb;
   border-color: #bbbbbb;
 }
 
-/*centering game title here*/
+/*CENTERING GAME TITLE HERE*/
 #game-title {
   text-align: center;
   text-transform: uppercase;
 }
 
+/*CENTERING GAME DESCRIPTION & STYLING BODY INFO HERE*/
 #game-description , p {
   padding-left: 20px;
   padding-right: 20px;
- 
 }
 
 .listItem {
@@ -325,21 +313,19 @@ img {
   img {
     width: 200px;
   }
-
   #game-website {
     font-size: 1rem;
   }
-
   .gifDiv {
     padding: 20px;
     padding-left: 60px;
   }
-
   .splitInfo {
     width: 100%;
   }
 }
 
+/* GETS RID OF 'X' IN SEARCH BAR*/
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
